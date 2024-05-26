@@ -151,6 +151,7 @@ ramips_setup_interfaces()
 		;;
 	comfast,cf-e390ax|\
 	comfast,cf-ew72-v2|\
+	openfi,5p|\
 	meig,slt866)
 		ucidef_set_interfaces_lan_wan "lan" "wan"
 		;;

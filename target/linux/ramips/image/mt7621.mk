@@ -1944,6 +1944,15 @@ define Device/oraybox_x3a
 endef
 TARGET_DEVICES += oraybox_x3a
 
+define Device/openfi_5p
+  $(Device/dsa-migration)
+  IMAGE_SIZE := 65216k
+  DEVICE_VENDOR := OpenFi
+  DEVICE_MODEL := 5PRO 
+  DEVICE_PACKAGES := kmod-mt7603  kmod-mt7615e kmod-mt7663-firmware-ap kmod-usb3
+endef
+TARGET_DEVICES += openfi_5p
+
 define Device/phicomm_k2p
   $(Device/dsa-migration)
   IMAGE_SIZE := 15744k
